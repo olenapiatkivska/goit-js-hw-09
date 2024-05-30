@@ -1,0 +1,25 @@
+.gallery {
+  display: flex;
+  max-width: 1128px;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0 auto;
+}
+.gallery-item {
+  width: calc((100% - 24px * 2) / 3);
+  height: 200px;
+  transition: transform 250ms ease;
+}
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.04);
+}
+
+.gallery-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+body .sl-overlay {
+  background-color: rgba(46, 47, 66, 0.8);
+}
